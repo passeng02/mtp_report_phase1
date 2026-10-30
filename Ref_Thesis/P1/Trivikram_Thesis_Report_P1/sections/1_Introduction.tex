@@ -1,0 +1,20 @@
+
+
+\chapter{Introduction}
+
+Images captured in high-altitude or extreme-weather regions such as fog, smog, dust storms, or snow often suffer from low contrast and color distortion.  
+These degradations create a distribution shift between clean datasets and real-world imagery, causing transformer-based vision systems like ViT~\cite{dosovitskiy2020vit} and multimodal encoders such as CLIP~\cite{radford2021clip} to perform unreliably.  
+Most modern vision backbones, derived from the transformer paradigm~\cite{vaswani2017attention}, assume clear, well-lit scenes and therefore fail when deployed on aerial or drone cameras in low-visibility conditions.
+This project addresses that gap by generating synthetic data that emulate such adverse environments.  
+Rather than relying on scarce real samples, diffusion-based generative models recreate realistic images exhibiting fog, cloud cover, pollution-induced smog, or heavy snow.  
+By exposing vision networks to these synthetically shifted distributions, we aim to improve robustness and interpretability under natural domain variations, aligning with the broader generative learning frameworks that evolved from VAEs~\cite{kingma2013autoencoding} and GANs~\cite{goodfellow2014gan}.
+Text and image-conditioned diffusion frameworks control the degree and type of degradation, enabling the creation of high-fidelity yet distribution-shifted datasets that support vision–language systems used in drone-based agricultural surveys at high-altitude.
+
+\section{Problem Statement}
+
+
+Current vision systems rarely encounter extreme environmental conditions and thus fail to generalize beyond clean training domains.
+This work focuses on \emph{dataset synthesis} using diffusion models to generate realistic, distribution-shifted images under fog, mist, and snow.
+The goal is to design a controllable generation pipeline that yields diverse data and enables adaptation of pre-trained models to these scenarios, enhancing perception reliability in adverse weather.
+Collecting real high-altitude imagery is difficult and unsafe, while existing datasets remain scarce and unrepresentative.
+Generative modeling offers a practical way to replicate these conditions synthetically, producing realistic yet diverse images that preserve structure while incorporating degradations typical of extreme weather crucial for reliable performance in drone-based applications.

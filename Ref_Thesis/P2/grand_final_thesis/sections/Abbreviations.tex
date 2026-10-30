@@ -1,0 +1,65 @@
+\chapter*{Abbreviations, Notation and Nomenclature}
+\addcontentsline{toc}{chapter}{Abbreviations, Notation and Nomenclature}
+
+\noindent The following abbreviations, symbols and notation are used throughout this thesis.
+
+\bigskip
+\noindent\textbf{Abbreviations}
+
+\bigskip
+\begin{tabular}{@{}ll@{}}
+AFNO    & Adaptive Fourier Neural Operator \\
+CFG     & Classifier-Free Guidance \\
+CLIP    & Contrastive Language-Image Pre-training \\
+CSD     & Contrastive Style Descriptor \\
+DCP     & Dark Channel Prior \\
+DDPM    & Denoising Diffusion Probabilistic Model \\
+DPT     & Dense Prediction Transformer \\
+FID     & Fr\'{e}chet Inception Distance \\
+IP      & Image Prompt (IP-Adapter) \\
+LPIPS   & Learned Perceptual Image Patch Similarity \\
+MTP     & M.Tech Project \\
+PSNR    & Peak Signal-to-Noise Ratio \\
+SDXL    & Stable Diffusion XL \\
+SSIM    & Structural Similarity Index Measure \\
+VLM     & Vision-Language Model \\
+ViT     & Vision Transformer \\
+\end{tabular}
+
+\clearpage
+\noindent\textbf{Mathematical Notation}
+
+\bigskip
+\begin{tabular}{@{}ll@{}}
+$\mathbf{x}$                & Clean (unnoised) image or sample \\
+$\mathbf{x}_t$              & Noisy sample at diffusion timestep $t$ \\
+$\epsilon_\theta$           & Noise prediction network parameterised by $\theta$ \\
+$\beta_t$                   & Noise schedule coefficient at timestep $t$ \\
+$\bar{\alpha}_t$            & Cumulative product $\prod_{s=1}^{t}(1-\beta_s)$ \\
+$d$                         & Per-pixel normalised depth (0 = near, 1 = far) \\
+$\beta_{\mathrm{atm}}$      & Atmospheric extinction coefficient \\
+$A_\infty$                  & Airlight (atmospheric light colour) \\
+$t(d)$                      & Transmission map: $t(d)=e^{-\beta_{\mathrm{atm}}\,d}$ \\
+$I(x)$                      & Observed hazy pixel at position $x$ \\
+$J(x)$                      & Scene radiance (haze-free pixel) \\
+$\alpha$                    & Content-subtraction scale for CLIP embedding ($=0.45$) \\
+$\eta$                      & CSD guidance step size \\
+\end{tabular}
+
+\bigskip
+\noindent\textbf{Pipeline Version Codes}
+
+\bigskip
+\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Code} & \textbf{Key innovation} & \textbf{Formal name} \\
+\midrule
+V0 & InstantStyle + CSD guidance loop          & CSD-Guided Latent Optimisation \\[2pt]
+V1 & Global IP-Adapter + depth-modulated noise & Depth-Aware Global Haze Injection \\[2pt]
+V2 & Style-block injection + CSD               & Block-Selective Perceptual Style Transfer \\[2pt]
+V3 & Style-block injection + Koschmieder       & Physics-Grounded Atmospheric Compositing \\[2pt]
+V5 & Mie wavelength-dependent sandstorm        & Mie-Scattering Sandstorm Synthesis \\[2pt]
+V7 & Snow accumulation modelling               & Layered Winter Scene Synthesis \\[2pt]
+V9 & CLIP content subtraction + Koschmieder    & Semantic-Decoupled Atmospheric Style Transfer \\
+\bottomrule
+\end{tabularx}

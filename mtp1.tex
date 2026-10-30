@@ -1,0 +1,282 @@
+\documentclass[12pt,oneside,dvipsnames, table]{book}
+\usepackage[margin=1.2in]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{algorithm}
+\usepackage{algpseudocode} 
+% \usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{placeins}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fourier-orns}
+\usepackage{hyperref} \hypersetup{ colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=cyan, pdftitle={MTP-Phase-1}, pdfpagemode=FullScreen, }
+
+
+% \usepackage{dedicatoria}
+
+%define new command for dedicatoru page
+\newcommand{\dedicatory}[1]{
+    \clearpage
+    \thispagestyle{empty}
+    \vspace*{3cm}
+    \begin{center}
+        \textit{\large{#1}}
+    \end{center}
+    \clearpage
+}
+
+
+\definecolor{tableheader}{RGB}{255, 204, 153}
+
+\newcommand{\name}{Saimadhav S}
+% \newcommand{\mtptitle}{Deep Learning Models for Distribution Shift-Based Style Transfer with Image Prompts}
+\newcommand{\mtptitle}{Development of Digital Twin for Warehousing}
+
+
+% % %USE FOR NO FIGURES.
+% \usepackage{comment}
+
+% % % Master toggles
+% \newif\ifremovefloats
+% \newif\ifhideimages
+% \newif\ifusedraft
+
+% % ======= SET MODE HERE =======
+% \removefloatstrue      % <--- this is the line you're asking about
+% \hideimagesfalse
+% \usedraftfalse
+% % =============================
+
+% \ifremovefloats
+%   \excludecomment{figure}
+% \else
+%   \ifhideimages
+%     \renewcommand{\includegraphics}[2][]{\relax}
+%   \fi
+%   \ifusedraft
+%     \usepackage[draft]{graphicx}
+%   \fi
+% \fi
+% --------------------------------------------------------------------
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                % clear all header and footer fields
+\fancyfoot[C]{\thepage}   % page number at bottom center
+\renewcommand{\headrulewidth}{0pt}  % remove top line
+\renewcommand{\footrulewidth}{0pt}  % no bottom line
+
+
+
+\begin{document}
+% \fontfamily{Times New Roman}
+\captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon}
+\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Table},labelsep=colon}
+% \setlipsumdefault{1}
+
+\frontmatter
+
+\begin{titlepage}
+
+
+% -------------------------------------------------------------------
+% You need to edit the details here
+% -------------------------------------------------------------------
+
+\begin{center}
+{\LARGE M.Tech Project Dissertation}\\[0.2 cm]
+\large{on}\\ 
+\linespread{1.2}\huge {\bfseries \mtptitle}\\[1 cm]
+\large{\textbf{Master of Technology}}\\
+\large{Stage - \textrm{I} Project Report}\\[0.3cm]
+\large{by}\\[0.5cm]
+{\Large\textbf{\name}}\\
+\large{(Roll No. 24m1532)}\\
+\Large{\textbf{Supervisor:}}\\
+\Large{\textbf{Prof. Jayendran Venkateswaran}}\\
+
+\linespread{1}
+
+\includegraphics[width=5cm]{images/iitb_logo.jpg}\\[0.5cm]
+
+\large{Department of} \\
+Industrial Engineering and Operations Research (IEOR) \\[0.3cm] 
+Indian Institute of Technology, Bombay\\
+\large Mumbai 400076 India
+\end{center}
+
+\end{titlepage}
+
+
+
+
+
+
+
+
+
+
+
+% -------------------------------------------------------------------
+% Declaration
+% \newpage
+% \begin{center}
+%         \Large
+%         \textbf{Acceptance Certificate}
+%     \end{center}
+%     \large
+%   This thesis entitled \textbf{“\mtptitle”} submitted by \textbf{\name} may be accepted for being evaluated. 
+  
+%   \vspace{2.cm}
+%   \hspace{1cm}\hfill \line(1,0){150}
+  
+%   \hspace{1cm}\hfill  Prof. Balamurugan Palaniappan
+  
+%   \vspace{-0 cm}
+%   \hspace{1 cm}\hfill \textbf{Supervisor}
+
+%   \noindent
+%   Place: \textbf{Mumbai}\\
+%   Date:  \today %\hfill
+
+
+% \newpage
+% \begin{center}
+%         \large
+%         \textbf{Approval Sheet}
+%     \end{center}
+%     \small
+%   This thesis entitled \textbf{“\mtptitle”} submitted by \textbf{\name} is approved for the degree of Master of Technology.
+% . 
+  
+%   \vspace{2.cm}
+%   \hspace{1cm}\hfill \line(1,0){150}
+  
+%   \hspace{1cm}\hfill  Prof. Balamurugan Palaniappan and Prof Jayendran Venkateswaram
+  
+%   \vspace{0cm}
+%   \hspace{1cm}\hfill \textbf{Supervisor}
+  
+%   \vspace{2.cm}
+%   \hspace{1cm}\hfill \line(1,0){150}
+  
+%   \hspace{1cm}\hfill  Prof. 
+  
+%   \vspace{0cm}
+%   \hspace{1cm}\hfill
+%   \textbf{Internal Examiner}
+  
+%   \vspace{2 cm}
+%   \hspace{1cm}\hfill \line(1,0){150}
+  
+  
+%   \hspace{1cm}\hfill  Prof. 
+  
+%   \vspace{0cm}
+%   \hspace{1cm}\hfill
+%   \textbf{External Examiner} 
+  
+%   \vspace{2 cm}
+%   \hspace{1cm}\hfill \line(1,0){150}
+  
+%   \hspace{1cm}\hfill  Prof. 
+  
+%   \vspace{0cm}
+%   \hspace{1cm}\hfill
+%   \textbf{Chairperson}\\
+  
+%   \noindent
+%   Date:  \today \\
+%   \noindent
+%   Place: \textbf{Mumbai}
+\newpage
+\begin{center}
+    
+
+\section*{\Large Declaration}
+\end{center}
+I affirm that this written submission is a representation of my own ideas, expressed in my own words. Wherever I have used the ideas or words of others, I have appropriately cited and referenced the original sources. I confirm that I have accurately acknowledged all sources used in the creation of this report. I also affirm that I have upheld all standards of academic integrity and honesty, ensuring that no idea, data, fact, or source has been misrepresented, fabricated, or falsified in this submission. I am aware that any breach of these principles may result in disciplinary action by the Institute and could also lead to legal consequences if sources are not properly cited or permissions were not obtained when required.\\[1cm]
+
+\noindent Name: \name\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+\noindent Signature: \includegraphics[height=50mm]{images/report-sign.jpg}\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+\noindent Date: \today\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+
+
+
+%----------acknowledgements-----------
+\input{sections/Acknowledgements.tex}
+
+
+
+
+%---------------------------------------
+% Add the dedication page
+\dedicatory{Dedicated to my parents and teachers (\emph{gurus})}
+
+
+% -------------------------------------------------------------------
+% Abstract
+\input{sections/0_abstract}
+
+
+% -------------------------------------------------------------------
+% Contents, list of figures, list of tables
+% -------------------------------------------------------------------
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+% -------------------------------------------------------------------
+% Main sections (as required)
+% -------------------------------------------------------------------
+
+\mainmatter
+\input{sections/1_Introduction.tex}
+\input{sections/2_Literature Survey.tex}
+\input{sections/3_Exp-Foundation.tex}
+\input{sections/4_Existing Solution.tex}
+\input{sections/5_Comparision.tex}
+\input{sections/6_Conclusion.tex}
+
+
+
+
+
+% appendix
+% \appendix
+% \input{sections/3_Key Concepts in Text Analytics.tex}
+% \input{sections/2_Neural Networks and Deep Learning}
+% \input{sections/6_Experimentation with DL algorithms.tex}
+% \input{sections/Transformers.tex}
+% \input{sections/sentence classification.tex}
+% \input{sections/Named Entity Recognition.tex}
+
+% Bibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\nocite{*}
+\bibliography{references.bib}
+\bibliographystyle{plain}
+
+\begin{center}
+----- \floweroneleft\floweroneright -----
+\end{center}
+\end{document}

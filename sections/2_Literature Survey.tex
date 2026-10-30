@@ -1,0 +1,43 @@
+% =====================================================
+\chapter{Literature Survey}
+\label{chap:literature_survey}
+
+
+This chapter builds the theoretical foundation for the work presented in this report.  
+
+% =====================================================
+\section{Warehouse Digital Twins}
+\label{sec:Warehouse DT}
+
+The first paper reviewed, authored by Ferrari et al. \cite{Ferrari2022}, has focused on the creation 
+of a Digital Shadow for an Automated Storage and Retrieval System (AS/RS) in a university
+logistics lab. A detailed simulation model was developed using AnyLogic, incorporating 
+discrete event and agent-based modeling. Although real-time control was not achieved, the 
+model was able to provide insights into system layout and performance. A Warehouse Management 
+System (WMS) and a Warehouse Control System (WCS) were used to coordinate operations such as 
+order generation and storage location management. The system was designed to simulate the behavior 
+of physical operations closely, though without live data feedback into the physical system. 
+
+The approach by Lugaresi et al. \cite{Lugaresi2019}, involved a small-scale manufacturing setup using LEGO components.
+A closed-loop production system with four stations (S1, S2, S3, S4) and associated buffers was designed,
+controlled by LEGO® MINDSTORMS® EV3® bricks programmed with Python scripts. Two product types (A and B) 
+with distinct processing times, modeled using Weibull distributions, were processed, and setup times for 
+switching between product types were required by stations S2, S3, and S4, with S2’s setup time increasing 
+exponentially after three consecutive type A pallets. A discrete event simulator, developed in ARENA® (Sim.doe), 
+was used as the digital model, synchronized with the physical LMS through data exchange files (*.txt) containing 
+buffer levels, processing times, and production status. Real-time data from the LMS were collected, the digital 
+model was updated, and alternative production policies were simulated to identify the optimal response to a disruption
+in the RTS framework.
+
+In the work by Zhang et al, \cite{Zhang2026} the core idea is \emph{opti-state control}. Rather than a single optimization before execution, the system is continuously monitored.
+ As the warehouse is deviated from its desired performance, there is adaptive reconfiguration of plans.  For warehouse and intralogistics research, the paper's contribution is to 
+ move from digital twins as a monitoring tool, toward a closed-loop control system.
+% =====================================================
+
+% =====================================================
+\section*{Summary}
+
+Research has steadily advanced toward controllable and interpretable generation.  
+Transformers introduced attention mechanisms, ViTs extended them to vision, and GANs and VAEs pioneered generative modeling.  
+Diffusion unified these ideas into a stable probabilistic framework, enhanced by latent conditioning, cross-attention, and adapters like ControlNet and IP-Adapter.  
+Contrastive systems such as CLIP and CSD added semantic and stylistic grounding, forming the basis for the adaptive, CSD-guided diffusion explored here.

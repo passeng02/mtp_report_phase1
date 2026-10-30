@@ -1,0 +1,11 @@
+\begin{abstract}
+
+Atmospheric conditions like haze, sandstorms, snow and underwater scattering cause severe distribution shifts, which reduce the image quality and severely impact the performance of vision systems. While large vision-language models (VLMs) like CLIP have demonstrated robustness to traditional domain shifts, their performance under extreme atmospheric degradations is still not well understood. At the same time, the collection and annotation of large-scale atmospheric datasets is costly, motivating the use of generative models for synthetic data creation.
+
+This thesis studies diffusion-based generative models for atmospheric image synthesis, domain adaptation, and robustness evaluation. Initial efforts repurposed cutting-edge style-transfer frameworks to create atmospheric imagery. The results of such methods were visually convincing, but the analysis revealed that the atmospheric effects were transferred mostly to the background regions, while the foreground objects remained visually clear and semantically recognizable. As a result, the generated transformations still remained readily classifiable by modern vision-language models, suggesting that perceptual appearance alone does not necessarily produce the representation-level shifts characteristic of real atmospheric conditions.
+
+The thesis also investigates physically based atmospheric synthesis. To produce controlled degradations while maintaining semantic consistency, a three-stage pipeline is proposed comprising a generative stage for scene generation, an atmospheric style transfer stage, and a depth-aware compositing stage based on monocular depth estimation and Koschmieder atmospheric scattering simulation. Results show that incorporating the physics of image formation yields more pronounced and physically consistent distribution shifts, and more accurately models real atmospheric imagery, compared to appearance-only style transfer.
+
+In summary, this work shows that representation-aware evaluation, semantic preservation, physically grounded degradation modeling, and robust adaptation strategies for extreme domain shifts are needed for successful atmospheric dataset synthesis.
+
+\end{abstract}

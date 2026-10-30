@@ -1,0 +1,393 @@
+% ---------------------- I. FOUNDATIONS: TRANSFORMERS & GANs ----------------------
+
+@inproceedings{vaswani2017attention,
+  title = {Attention Is All You Need},
+  author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and {\L}ukasz Kaiser and Illia Polosukhin},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2017},
+  note = {\url{https://arxiv.org/abs/1706.03762}}
+}
+
+@article{dosovitskiy2020vit,
+  title = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  author = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and T. Patrick Korenkevych and Andrew Houlsby and Neil Houlsby},
+  journal = {International Conference on Learning Representations (ICLR)},
+  year = {2021},
+  eprint = {2010.11929},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2010.11929}}
+}
+
+@article{kingma2013autoencoding,
+  title = {Auto-Encoding Variational Bayes},
+  author = {Diederik P. Kingma and Max Welling},
+  journal = {International Conference on Learning Representations (ICLR)},
+  year = {2014},
+  eprint = {1312.6114},
+  archivePrefix = {arXiv},
+  primaryClass = {stat.ML},
+  note = {\url{https://arxiv.org/abs/1312.6114}}
+}
+
+@inproceedings{goodfellow2014gan,
+  title = {Generative Adversarial Nets},
+  author = {Ian Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and Sherjil Ozair and Aaron Courville and Yoshua Bengio},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2014},
+  note = {\url{https://arxiv.org/abs/1406.2661}}
+}
+
+@article{mirza2014conditional,
+  title = {Conditional Generative Adversarial Nets},
+  author = {Mehdi Mirza and Simon Osindero},
+  journal = {arXiv preprint},
+  year = {2014},
+  eprint = {1411.1784},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  note = {\url{https://arxiv.org/abs/1411.1784}}
+}
+
+@inproceedings{odena2017acgan,
+  title = {Conditional Image Synthesis With Auxiliary Classifier GANs},
+  author = {Augustus Odena and Christopher Olah and Jonathon Shlens},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year = {2017},
+  note = {\url{https://arxiv.org/abs/1610.09585}}
+}
+
+@inproceedings{ronneberger2015unet,
+  title = {U-Net: Convolutional Networks for Biomedical Image Segmentation},
+  author = {Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+  booktitle = {International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+  year = {2015},
+  note = {\url{https://arxiv.org/abs/1505.04597}}
+}
+
+@inproceedings{vandenoord2017vqvae,
+  title = {Neural Discrete Representation Learning},
+  author = {Aaron van den Oord and Oriol Vinyals and Koray Kavukcuoglu},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2017},
+  note = {\url{https://arxiv.org/abs/1711.00937}}
+}
+
+@inproceedings{dhariwal2021diffusion,
+  title = {Diffusion Models Beat GANs on Image Synthesis},
+  author = {Prafulla Dhariwal and Alex Nichol},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2021},
+  note = {\url{https://arxiv.org/abs/2105.05233}}
+}
+
+@inproceedings{karras2019stylegan,
+  title = {A Style-Based Generator Architecture for Generative Adversarial Networks},
+  author = {Tero Karras and Samuli Laine and Timo Aila},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2019},
+  note = {\url{https://arxiv.org/abs/1812.04948}}
+}
+
+@inproceedings{karras2020stylegan2,
+  title = {Analyzing and Improving the Image Quality of StyleGAN},
+  author = {Tero Karras and Samuli Laine and Miika Aittala and Janne Hellsten and Jaakko Lehtinen and Timo Aila},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2020},
+  note = {\url{https://arxiv.org/abs/1912.04958}}
+}
+
+% ---------------------- II. CORE DIFFUSION MODELS ----------------------
+
+@article{ho2020ddpm,
+  title = {Denoising Diffusion Probabilistic Models},
+  author = {Jonathan Ho and Ajay Jain and Pieter Abbeel},
+  journal = {Advances in Neural Information Processing Systems},
+  year = {2020},
+  eprint = {2006.11239},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  note = {\url{https://arxiv.org/abs/2006.11239}}
+}
+
+@article{song2020ddim,
+  title = {Denoising Diffusion Implicit Models},
+  author = {Jiaming Song and Chenlin Meng and Stefano Ermon},
+  journal = {International Conference on Learning Representations (ICLR)},
+  year = {2021},
+  eprint = {2010.02502},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  note = {\url{https://arxiv.org/abs/2010.02502}}
+}
+
+@inproceedings{rombach2022ldm,
+  title = {High-Resolution Image Synthesis with Latent Diffusion Models},
+  author = {Robin Rombach and Andreas Blattmann and Dominik Lorenz and Patrick Esser and Björn Ommer},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2022},
+  eprint = {2112.10752},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2112.10752}}
+}
+
+@article{podell2023sdxl,
+  title = {SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis},
+  author = {Dustin Podell and Kyle Lacey and Andreas Blattmann and Tim Dockhorn and Jonas Müller and Joe Penna and Robin Rombach},
+  journal = {arXiv preprint},
+  year = {2023},
+  eprint = {2307.01952},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2307.01952}}
+}
+
+% ---------------------- III. CROSS-MODAL & ADAPTERS (CLIP, IP, T2I) ----------------------
+
+@article{radford2021clip,
+  title = {Learning Transferable Visual Models From Natural Language Supervision},
+  author = {Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+  journal = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year = {2021},
+  eprint = {2103.00020},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2103.00020}}
+}
+
+@inproceedings{chen2023ipadapter,
+  title = {IP-Adapter: A Lightweight Image-Prompt Adapter for Controllable Diffusion},
+  author = {Hao Chen and Zhifeng Huang and Yuxin Zhang and Junjie Liu and Jun Huang and Shuai Wang and Zhaoxin Fan and Shiji Zhou},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2308.06721}}
+}
+
+@inproceedings{mou2023t2iadapter,
+  title = {T2I-Adapter: Text-to-Image Adapter for Stable Diffusion},
+  author = {Chong Mou and Xintao Wang and LiangZhe Lai and Pengze Zhang and Weihao Xia and Yadong Mu and Ying Shan and Ge Li and Jian Zhang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2302.08447}}
+}
+
+@inproceedings{patashnik2021styleclip,
+  title = {StyleCLIP: Text-Driven Image Manipulation through Latent Space Navigation},
+  author = {Or Patashnik and Zongze Wu and Eli Shechtman and Daniel Cohen-Or and Dani Lischinski},
+  booktitle = {International Conference on Computer Vision (ICCV)},
+  year = {2021},
+  note = {\url{https://arxiv.org/abs/2103.17249}}
+}
+
+% ---------------------- IV. STRUCTURAL CONTROL & EDITING ----------------------
+
+@inproceedings{zhang2023controlnet,
+  title = {ControlNet: Adding Conditional Control to Text-to-Image Diffusion Models},
+  author = {Lvmin Zhang and Anyi Rao and Maneesh Agrawala},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2302.05543}}
+}
+
+@inproceedings{song2021sdeedit,
+  title = {SDEdit: Image Synthesis and Editing with Stochastic Differential Equations},
+  author = {Yang Song and Jascha Sohl-Dickstein and Diederik P. Kingma and Abhishek Kumar and Stefano Ermon and Ben Poole},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2021},
+  note = {\url{https://arxiv.org/abs/2011.13961}}
+}
+
+@inproceedings{tumanyan2023plugandplaydiffusion,
+  title = {Plug \& Play Diffusion: Conditional Iterative Image Generation without Retraining},
+  author = {Narek Tumanyan and Michal Geyer and Shai Bagon and Tali Dekel},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2212.05141}}
+}
+
+@inproceedings{li2024wadapter,
+  title = {When StyleGAN Meets Stable Diffusion: a W+ Adapter for Personalized Image Generation},
+  author = {Xiaoming Li and Xinyu Hou and Chen Change Loy},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2024},
+  pages = {2187-2196},
+  note = {\url{https://openaccess.thecvf.com/content/CVPR2024/papers/Li_When_StyleGAN_Meets_Stable_Diffusion_a_W_Adapter_for_Personalized_Image_Generation_CVPR_2024_paper.pdf}}
+}
+
+% ---------------------- V. IDENTITY & PERSONALIZATION ----------------------
+
+@inproceedings{ruiz2023dreambooth,
+  title = {DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation},
+  author = {Nataniel Ruiz and Yuanzhen Li and Varun Jampani and Yael Pritch and Michael Rubinstein and Kfir Aberman},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2208.12242}}
+}
+
+@article{wang2024instantid,
+  title = {InstantID: Zero-shot Identity-Preserving Generation in Seconds},
+  author = {Qixun Wang and Xu Bai and Haofan Wang and Zekui Qin and Anthony Chen and Huaxia Li and Xu Tang and Yao Hu},
+  journal = {arXiv preprint},
+  year = {2024},
+  eprint = {2401.07519},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2401.07519}}
+}
+
+% ---------------------- VI. STYLE & STYLIZATION ----------------------
+
+@inproceedings{deng2022stytr2,
+  title = {StyTr2: Image Style Transfer with Transformers},
+  author = {Yingying Deng and Xiaoming Shi and Weixi Gong and Weiping Wang and Huimin Ma and Tiejun Huang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2022},
+  note = {\url{https://arxiv.org/abs/2203.02450}}
+}
+
+@inproceedings{cho2024osasis,
+  title = {One-Shot Structure-Aware Stylized Image Synthesis},
+  author = {Hansam Cho and Jonghyun Lee and Seunggyu Chang and Yonghyun Jeong},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2024},
+  pages = {8302-8311},
+  note = {\url{https://openaccess.thecvf.com/content/CVPR2024/papers/Cho_One-Shot_Structure-Aware_Stylized_Image_Synthesis_CVPR_2024_paper.pdf}}
+}
+
+@article{gao2024styleshot,
+  title = {StyleShot: A Snapshot on Any Style},
+  author = {Jiawei Gao and (and co-authors)},
+  journal = {arXiv preprint},
+  year = {2024},
+  eprint = {2407.01414},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2407.01414}}
+}
+
+@article{wang2024instantstyle,
+  title = {InstantStyle: Style Transfer with Text-to-Image Diffusion Models},
+  author = {Qixun Wang and Xu Bai and Haofan Wang and Anthony Chen and Shancheng Fang and Renyuan Huang and Yuxin Zhang and Junjie Liu and Jun Huang and Yao Hu},
+  journal = {arXiv preprint},
+  year = {2023},
+  eprint = {2310.02709},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2310.02709}}
+}
+
+@article{wang2024instantstyleplus,
+  title = {InstantStyle-Plus: Style Transfer with Content-Preserving in Text-to-Image Generation},
+  author = {Haofan Wang and Peng Xing and Renyuan Huang and Hao Ai and Qixun Wang and Xu Bai},
+  journal = {arXiv preprint},
+  year = {2024},
+  eprint = {2407.00788},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2407.00788}}
+}
+
+@article{xing2024csgocomp,
+  title = {CSGO: Content-Style Composition in Text-to-Image Generation},
+  author = {Peng Xing and Haofan Wang and Yanpeng Sun and Qixun Wang and Xu Bai and Hao Ai and Renyuan Huang and Zechao Li},
+  journal = {arXiv preprint},
+  year = {2024},
+  eprint = {2408.16766},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2408.16766}}
+}
+
+@article{somepalli2024csd,
+  title = {Measuring Style Similarity in Diffusion Models},
+  author = {Gowthami Somepalli and Anubhav Gupta and Kamal Gupta and Shramay Palta and Micah Goldblum and Jonas Geiping and Abhinav Shrivastava and Tom Goldstein},
+  journal = {arXiv preprint},
+  year = {2024},
+  eprint = {2404.01292},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  note = {\url{https://arxiv.org/abs/2404.01292}}
+}
+
+% ---------------------- VII. HYBRIDS & INVERSION ----------------------
+
+@inproceedings{liu2023delving,
+  title = {Delving StyleGAN Inversion for Image Editing: A Foundation Latent Space},
+  author = {Hao Liu and (and co-authors)},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023},
+  note = {\url{https://arxiv.org/abs/2211.11448}}
+}
+
+
+% ---------------------- VIII. MISC / DATASETS ----------------------
+
+
+% ---------------------- IX. BOOKS ----------------------
+
+@book{foster2023generativedeeplearning,
+  title     = {Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play},
+  author    = {David Foster},
+  year      = {2023},
+  publisher = {O'Reilly Media},
+  edition   = {2nd Edition},
+  note      = {\url{https://www.oreilly.com/library/view/generative-deep-learning/9781098134181/}}
+}
+
+
+
+
+@InProceedings{arjovsky2017wassersteingan,
+  title = 	 {{W}asserstein Generative Adversarial Networks},
+  author =       {Martin Arjovsky and Soumith Chintala and L{\'e}on Bottou},
+  booktitle = 	 {Proceedings of the 34th International Conference on Machine Learning},
+  year = 	 {2017},
+ note = {\url{https://arxiv.org/abs/1701.07875}}
+}
+@InProceedings{carion2020endtoendobjectdetectiontransformers,
+      title={End-to-End Object Detection with Transformers}, 
+      author={Nicolas Carion and Francisco Massa and Gabriel Synnaeve and Nicolas Usunier and Alexander Kirillov and Sergey Zagoruyko},
+      year={2020},
+      note = {\url{https://arxiv.org/abs/2005.12872}}, 
+}
+
+@InProceedings{oshea2015introductionconvolutionalneuralnetworks,
+      title={An Introduction to Convolutional Neural Networks}, 
+      author={Keiron O'Shea and Ryan Nash},
+      year={2015},
+
+       note = {\url{https://arxiv.org/abs/1511.08458}}, 
+}
+@online{google_images,
+  author    = {{Google Images}},
+  title     = {Google Image Search},
+  year      = {2024},
+  url       = {https://images.google.com/},
+  note      = {Accessed: 2025-10-22}
+}
+
+@online{pinterest,
+  author    = {{Pinterest}},
+  title     = {Pinterest Image Collections},
+  year      = {2024},
+  url       = {https://www.pinterest.com/},
+  note      = {Accessed: 2025-10-22}
+}
+
+@online{istock,
+  author    = {{iStock by Getty Images}},
+  title     = {iStock Photo Library},
+  year      = {2024},
+  url       = {https://www.istockphoto.com/},
+  note      = {Accessed: 2025-10-22}
+}
+@inproceedings{zhang2018lpips,
+  title = {The Unreasonable Effectiveness of Deep Features as a Perceptual Metric},
+  author = {Richard Zhang and Phillip Isola and Alexei A. Efros and Eli Shechtman and Oliver Wang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2018},
+  pages = {586--595},
+  note = {\url{https://arxiv.org/abs/1801.03924}}
+}
+
