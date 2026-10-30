@@ -9,15 +9,13 @@ This chapter presents some foundational experiments conducted to get used to the
 
 A contactless technology called RFID (Radio Frequency Identification) is utilized for data collection and automatic identification. It eliminates the need for physical contact by using radio waves to transport data between an RFID tag and a reader. RFID tags and RFID readers are the two fundamental parts of an RFID system. A tiny electronic device called an RFID tag is affixed to the item you wish to track or identify. The tag is made up of an antenna that connects to the reader and a microchip that saves data. Active and passive RFID tags are two different categories.
 
-Based on the MFRC522 chip created by NXP Semiconductors, the RC522 RFID module is a popular and inexpensive RFID reader/writer module. The standard frequency for RFID communication, 13.56 MHz, is where it operates.
-
-This module supports several communication protocols, such as SPI (Serial Peripheral Interface), I2C (Inter-Integrated Circuit), and UART (Universal Asynchronous Receiver-Transmitter), and is appropriate for short-distance communication, usually within a 5 cm range.
-
+Based on the MFRC522 chip created by NXP Semiconductors, the RC522 RFID module is a popular and inexpensive RFID reader/writer module. The standard frequency for RFID communication, 13.56 MHz, is where it operates. This module supports several communication protocols, such as SPI (Serial Peripheral Interface), I2C (Inter-Integrated Circuit), and UART (Universal Asynchronous Receiver-Transmitter), and is appropriate for short-distance communication, usually within a 5 cm range.
 The majority of RC522 modules include:
 
-  a)  A 1K RFID card from MIFARE Classic
-  b)  A key fob or tag
-
+\begin{itemize}
+  \item  A 1K RFID card from MIFARE Classic 
+  \item A key fob or tag
+\end{itemize}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.65\linewidth]{images/RFID.png}
@@ -33,7 +31,7 @@ An electronic sensor that detects infrared (IR) light emitted by objects within 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.55\linewidth]{images/PIR.png}
-    \caption{}
+    \caption{PIR sensor}
     \label{fig:PIR sensor}
 \end{figure}
 
@@ -42,14 +40,14 @@ An electronic sensor that detects infrared (IR) light emitted by objects within 
 \label{sec:ultrasonic_experiments}
 
 The ultrasonic sensor uses sound waves and the echo principle to calculate distance from obstacles. 
-Distance Travelled = \frac{Speed of Sound \multiply Time Travlled}{2}
+Distance Travelled = $\frac{\text{Speed of Sound} \times \text{Time Travelled}}{2}$
 HCSR04 is the code for an ultrasonic sensor module avaialable in the market. It has a range from 2cm to 400cm. The ranging accuracy is 3mm. The sensor module has four pins: VCC, GND, TRIG and
 ECHO.
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.65\linewidth]{images/hcsr04.jpg}
+    \includegraphics[width=0.65\linewidth]{images/hcsr04.jpeg}
     \caption{Ultrasonic sensor module}
-    \label{fig:ddpm_samples}
+    \label{fig:ultrasonic_sensor}
 \end{figure}
 
 % =====================================================
